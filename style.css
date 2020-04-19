@@ -4,16 +4,44 @@ p {
 
 a:link, a:visited, a:active {
     color: #000000;
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
+    text-decoration: none !important;
     color: #FA4851 !important;
     transition: 0.3s;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #FA4851;
 }
 
 #intro {
     font-size: 8vh;
     margin-top: 20vh;
+}
+
+#circle-me {
+    width: 24vw;
+    height: 24vw;
+    margin-left: -1vw;
+    background-image: url(img/me.jpg);
+    background-size: contain;
+    border-radius: 100%;
+}
+
+#circle-social {
+    display: table;
+    margin: 0 auto;
+    margin-top: 2vw;
+}
+
+#circle-social>a>img {
+    width: 3vw;
+    height: 3vw;
+    margin: 0.5vw;
 }
 
 .nav-link {
