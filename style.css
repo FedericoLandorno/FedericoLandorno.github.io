@@ -44,6 +44,26 @@ a:hover {
     margin: 0.5vw;
 }
 
+#mail-social {
+    display: table;
+    margin: 0 auto;
+    margin-top: 1vw;
+}
+
+#mail-social>img{
+    width: 2vw;
+}
+
+#mail-social>a:link, #mail-social>a:visited, #mail-social>a:active {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+#mail-social>a:hover {
+    color: #ffffff !important;
+}
+
 .nav-link {
     font-size: 4vh;
     float: left
