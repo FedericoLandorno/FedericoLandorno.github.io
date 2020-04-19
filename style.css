@@ -1,0 +1,26 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#intro {
+    font-size: 8vh;
+    margin-top: 20vh;
+}
+
+.nav-link {
+    font-size: 4vh;
+    float: left
+}
+
+.dot {
+    color: #FA4851;
+    float: left;
+}
+
+.col-red {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #FA4851;
+}
