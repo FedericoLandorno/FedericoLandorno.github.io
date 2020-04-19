@@ -18,9 +18,17 @@ a:hover {
     background-color: #FA4851;
 }
 
+#stain{
+    background-image: url(img/stain.svg);
+    background-repeat: no-repeat;
+    background-position: -24vw;
+    background-size: 50vw;
+}
+
 #intro {
     font-size: 8vh;
     margin-top: 24vh;
+    margin-left: 8vh;
 }
 
 #circle-me {
@@ -62,6 +70,14 @@ a:hover {
 
 #mail-social>a:hover {
     color: #ffffff !important;
+}
+
+
+.margin-fix {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-link {
