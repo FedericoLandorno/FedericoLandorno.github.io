@@ -38,6 +38,10 @@ a:hover {
     border-radius: 100%;
 }
 
+#intro-mobile {
+    visibility: hidden;
+}
+
 #circle-me {
     width: 20vw;
     height: 20vw;
@@ -125,14 +129,11 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-
     #circle-me {
         width: 50vw;
         height: 50vw;
     }
     #circle-social {
-        display: table;
-        margin: 0 auto;
         margin-top: 2vw;
     }
     #circle-social>a>img {
@@ -141,16 +142,21 @@ a:hover {
         margin: 0.5vw;
     }
     #mail-social {
-        display: table;
-        margin: 0 auto;
-        margin-top: 1vw;
+        margin-top: 2vw;
     }
     #mail-social>img {
         width: 8vw;
     }
     #mail-social>a:link, #mail-social>a:visited, #mail-social>a:active {
-        color: #ffffff;
-        text-decoration: none;
         font-size: 5vw;
+    }
+    #intro-mobile {
+        visibility: visible;        
+        font-size: 8vw;
+        padding:3vw;
+    }
+    #intro-mobile>img {
+        width: 10vw;
+        border-radius: 100%;
     }
 }
