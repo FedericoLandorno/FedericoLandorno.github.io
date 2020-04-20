@@ -18,16 +18,18 @@ a:hover {
     background-color: #FA4851;
 }
 
-#stain {
-    background-image: url(img/stain.svg);
-    background-repeat: no-repeat;
-    background-position: -24vw;
-    background-size: 50vw;
+@media (min-width: 992px) {
+    #stain {
+        background-image: url(img/stain.svg);
+        background-repeat: no-repeat;
+        background-position: -24vw;
+        background-size: 50vw;
+    }
 }
 
 #intro {
-    font-size: 8vh;
-    margin-top: 24vh;
+    font-size: 7vh;
+    margin-top: 20%;
 }
 
 #intro>img {
@@ -37,9 +39,10 @@ a:hover {
 }
 
 #circle-me {
-    width: 24vw;
-    height: 24vw;
-    margin-left: -1vw;
+    width: 20vw;
+    height: 20vw;
+    display: table;
+    margin: 0 auto;
     background-image: url(img/me.jpg);
     background-size: contain;
     border-radius: 100%;
@@ -83,10 +86,8 @@ a:hover {
     font-size: 4vh;
 }
 
-
 #look-work>img {
     height: 5vh;
-    
     animation: MoveUpDown 1s linear infinite;
 }
 
@@ -115,4 +116,41 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     background-color: #FA4851;
+}
+
+@media (max-width: 991px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #circle-me {
+        width: 50vw;
+        height: 50vw;
+    }
+    #circle-social {
+        display: table;
+        margin: 0 auto;
+        margin-top: 2vw;
+    }
+    #circle-social>a>img {
+        width: 10vw;
+        height: 10vw;
+        margin: 0.5vw;
+    }
+    #mail-social {
+        display: table;
+        margin: 0 auto;
+        margin-top: 1vw;
+    }
+    #mail-social>img {
+        width: 8vw;
+    }
+    #mail-social>a:link, #mail-social>a:visited, #mail-social>a:active {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 5vw;
+    }
 }
