@@ -2,6 +2,15 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 a:link, a:visited, a:active {
     color: #000000;
     text-decoration: none;
@@ -42,46 +51,51 @@ a:hover {
     display: none;
 }
 
+#main-red-col {
+    height: 80vh;
+}
+
 #circle-me {
-    width: 20vw;
-    height: 20vw;
+    width: 90%;
     display: table;
     margin: 0 auto;
-    background-image: url(img/me.jpg);
-    background-size: contain;
     border-radius: 100%;
 }
 
-#circle-social {
+#circle-social{
     display: table;
     margin: 0 auto;
     margin-top: 2vw;
 }
 
-#circle-social>a>img {
+#circle-social>a>img{
     width: 3vw;
     height: 3vw;
     margin: 0.5vw;
 }
 
-#mail-social {
+#mail-social, #cv {
     display: table;
     margin: 0 auto;
     margin-top: 1vw;
 }
 
-#mail-social>img {
+#mail-social>img, #cv>img  {
     width: 2vw;
 }
 
-#mail-social>a:link, #mail-social>a:visited, #mail-social>a:active {
+#mail-social>a:link, #mail-social>a:visited, #mail-social>a:active, #cv>a:link, #cv>a:visited, #cv>a:active{
     color: #ffffff;
     text-decoration: none;
     font-size: 1vw;
 }
 
-#mail-social>a:hover {
+#mail-social>a:hover, #cv>a:hover {
     color: #ffffff !important;
+}
+
+#cv{
+    text-decoration: underline solid #ffffff;
 }
 
 #look-work {
@@ -129,9 +143,12 @@ a:hover {
 }
 
 @media (max-width: 576px) {
+    #main-red-col {
+        height: 90vh;
+    }
     #circle-me {
-        width: 50vw;
-        height: 50vw;
+        padding-top: 2vw;
+        width: 65%;
     }
     #circle-social {
         margin-top: 2vw;
@@ -141,13 +158,13 @@ a:hover {
         height: 10vw;
         margin: 0.5vw;
     }
-    #mail-social {
+    #mail-social, #cv {
         margin-top: 2vw;
     }
-    #mail-social>img {
+    #mail-social>img, #cv>img   {
         width: 8vw;
     }
-    #mail-social>a:link, #mail-social>a:visited, #mail-social>a:active {
+    #mail-social>a:link, #mail-social>a:visited, #mail-social>a:active, #cv>a:link, #cv>a:visited, #cv>a:active {
         font-size: 5vw;
     }
     #intro-mobile {
