@@ -195,3 +195,34 @@ a:hover {
         margin-right: 0%;
     }
 }
+
+
+/* University Work */
+
+.full-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+.col-red-round {
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #FA4851;
+    border-radius: 0% 0% 60% 60%;
+}
+
+.card{
+    border-color: #ffffff !important;
+}
+.card-title{
+    color: #FA4851;
+}
+.btn-light{
+    background-color: #FA4851 !important;
+    border: none !important;
+}
+.btn-light:hover{
+    color:white !important;
+}

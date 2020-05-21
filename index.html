@@ -25,16 +25,44 @@
         <div class="row" style="height: 10vh;">
             <!-- Left col -->
             <div class="col-lg-8 hide-mobile">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#works">
                     <p class="dot">●</p> Work
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" data-toggle="modal" data-target="#aboutModal" href="#">
                     <p class="dot">●</p> About
                 </a>
             </div>
             <!-- Right col -->
             <div class="col-lg-4 col-12">
                 <div class="col-red"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #FA4851; color:white">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">About me!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Hi! I'm Federico, a UX Designer and developer. At the moment I am graduating in Interactive Media
+                    Technology from the Royal Institute of Technology, Stockholm to deepen my knowledge of user
+                    experience and interaction.
+                    <br><br>
+                    I started my journey as a developer during high school where I learned the fundamentals of logic.
+                    Spurred by the challenges, I started working in this area as a Java developer until I decided to
+                    resume studying by enrolling at the University of Turin. In those three years I learned new
+                    approaches to programming and got a peripheral view on the vast subject.
+                    <br><br>
+                    I decided to move on to a branch that required more imagination and relationships with people, so I
+                    decided to have an experience abroad in Sweden where I now live and study!
+                </div>
             </div>
         </div>
     </div>
@@ -54,7 +82,7 @@
                 </div>
                 <!-- Right col -->
                 <div class="col-lg-4 col-12">
-                    <div class="col-red">
+                    <div class="col-red-round">
 
                         <img src="img/me.jpg" id="circle-me">
 
@@ -78,10 +106,6 @@
                             <a href="mailto:f.landorno@gmail.com">f.landorno@gmail.com</a>
                         </p>
 
-                        <p id="cv">
-                            <img src="img/description-white-24dp.svg">
-                            <a href="#" target="_blank">Download my CV</a>
-                        </p>
 
                         <p id="intro-mobile">
                             <img src="img/fox.gif" alt="Hi">
@@ -112,24 +136,64 @@
             </div>
             <!-- Right col -->
             <div class="col-lg-4 col-12">
-                <div class="col-red">
+                <!--div class="col-red"-->
+                <div>
                     <p id="arrow-mobile">⌵</p>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!-- Javascript imported scripts -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <!-- WORKS -->
+
+    <div class="container" id="works">
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/university/ProjectEir.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Project Eir</h5>
+                    <p class="card-text">Visualization of world clinical trials to understand which ones are most
+                        studied and compare them.</p>
+                    <p class="card-text"><small class="text-muted">Developer: HTML, CSS, JS (jQuery & D3)</small></p>
+                    <a href="https://projecteir.github.io/" target="_blank" class="btn btn-light">Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/university/MemoryAr.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Memory AR</h5>
+                    <p class="card-text">The famous Memory card game brought in augmented reality where the user will
+                        have to remember sounds and vibrations instead of images.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Developer: Unity, C#, Augmented Reality</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/university/Sonification.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Soundscape of urban transport</h5>
+                    <p class="card-text">Design of the soundscape of the future for the metro and the streets of
+                        Stockholm.</p>
+                    <p class="card-text"><small class="text-muted">Interaction and Sound Designer</small></p>
+                    <a href="https://docs.google.com/document/d/17JV4kHSZukY-lshcCFjC2DK1nezu2FBkkXdmyQBRjRU/edit?usp=sharing"
+                        target="_blank" class="btn btn-light">Report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript imported scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
