@@ -46,13 +46,10 @@
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #FA4851; color:white">
                     <h5 class="modal-title" id="exampleModalCenterTitle">About me!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
                 <div class="modal-body">
-                    Hi! I'm Federico, a UX Designer and developer. At the moment I am graduating in Interactive Media
-                    Technology from the Royal Institute of Technology, Stockholm to deepen my knowledge of user
+                    Hi! I'm Federico, a UX Designer and developer. At the moment I am pursuing a Master in Interactive
+                    Media Technology from the Royal Institute of Technology, Stockholm to deepen my knowledge of user
                     experience and interaction.
                     <br><br>
                     I started my journey as a developer during high school where I learned the fundamentals of logic.
@@ -150,6 +147,7 @@
 
     <div class="container" id="works">
         <div class="card-deck">
+
             <div class="card">
                 <img src="img/university/ProjectEir.png" class="card-img-top">
                 <div class="card-body">
@@ -159,20 +157,94 @@
                     <p class="card-text"><small class="text-muted">Developer: HTML, CSS, JS (jQuery & D3)<br>Course:
                             Information Visualization</small></p>
 
-                    <a href="https://projecteir.github.io/" target="_blank" class="btn btn-light">Website</a>
+                    <a href="#" data-toggle="modal" data-target="#clinical-modal" target="_blank"
+                        class="btn btn-light">About</a>
                 </div>
             </div>
+
+            <div class="modal fade" id="clinical-modal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #FA4851; color:white">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Project Eir</h5>
+                        </div>
+                        <div class="modal-header">
+                            <small>
+                                Information Visualization includes techniques and principles for visualization of
+                                information with examples, demonstrations and lab assignments within different
+                                applications.
+                            </small>
+                        </div>
+                        <div class="modal-body">
+                            Managing and showing more than 300,000 clinical trials for researchers is a real
+                            problem.<br>
+                            This project aims to facilitate this problem by displaying information to make it easy to
+                            find details, give a good overview, explore clinical tests, and also filter, brush, and
+                            search for data.<br>
+                            The outcome of the course gave me the opportunity to improve different skills. We learned to
+                            retrieve data from in different ways and blend them together, We increased our knowledge in
+                            the use of D3.js, and more importantly apply information visualization theory along with
+                            data categorization.
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://www.kth.se/student/kurser/kurs/DH2321?l=en" target="_blank"
+                                class="btn btn-gray">Course</a>
+                            <a href="https://projecteir.github.io/" target="_blank" class="btn btn-light">Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="card">
                 <img src="img/university/MemoryAr.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Memory AR</h5>
-                    <p class="card-text">The famous Memory card game brought in augmented reality where the user will
+                    <p class="card-text">The Memory card game brought in AR where the user will
                         have to remember sounds and vibrations instead of images.
                     </p>
                     <p class="card-text"><small class="text-muted">Developer: Unity, C#, Augmented Reality<br>Course:
                             Multimodal Interaction</small></p>
+                    <a href="#" data-toggle="modal" data-target="#memory-modal" class="btn btn-light">About</a>
                 </div>
             </div>
+
+            <div class="modal fade" id="memory-modal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #FA4851; color:white">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Memory AR</h5>
+                        </div>
+                        <div class="modal-header">
+                            <small>
+                                Multimodal interaction and interfaces is focused on the interaction
+                                between humans and computers, using interfaces that employ several modalities and human
+                                senses, such as speech, gestures and touch.
+                            </small>
+                        </div>
+                        <div class="modal-body">
+                            The purpose of the Memory AR project was to compare two different modalities, which are
+                            not commonly found in a typical Memory game. For once we wanted to enable visually
+                            impaired people to play a game of memory. In addition to that we wanted to compare the
+                            capability to perceive and remember different modalities. In this paper we show how users
+                            experience the new Memory AR, which play sound or vibration patterns instead of showing
+                            images.
+                            Furthermore, how good the participants are at perceiving the sound and vibration
+                            patterns. We also aim to investigate if a redundant implementation of sound and vibration
+                            improved the recognition and remembering rate and perhaps made the game more engaging.
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://www.kth.se/student/kurser/kurs/DT2140?l=en" target="_blank"
+                                class="btn btn-gray">Course</a>
+                            <a href="https://drive.google.com/file/d/1iYuY8Ta4liZtT4NC8pKwOmLj7xGr7v48/view?usp=sharing"
+                                target="_blank" class="btn btn-light">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="card">
                 <img src="img/university/Sonification.png" class="card-img-top">
                 <div class="card-body">
@@ -183,10 +255,50 @@
                             Course: Sound in Interaction
                         </small></p>
                     <p class="card-text"><small class="text-muted"></small></p>
-                    <a href="https://docs.google.com/document/d/17JV4kHSZukY-lshcCFjC2DK1nezu2FBkkXdmyQBRjRU/edit?usp=sharing"
-                        target="_blank" class="btn btn-light">Report</a>
+                    <a href="#" data-toggle="modal" data-target="#sound-modal" target="_blank"
+                        class="btn btn-light">Report</a>
                 </div>
             </div>
+
+
+            <div class="modal fade" id="sound-modal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #FA4851; color:white">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Soundscape of urban transport</h5>
+                        </div>
+                        <div class="modal-header">
+                            <small>
+                                Sound in Interaction offers a multi-disciplinary overview of the principles underlying the use of
+                                sound in interaction between users and machines.
+                            </small>
+                        </div>
+                        <div class="modal-body">
+                            The soundscapes of environments of urban transportation means are oftentimes overlooked by
+                            frequent visitors. This paper aims to bring a broadened acoustic awareness to one such
+                            environment, namely the Stockholm metro and adjacent urban soundscape. While aiming to
+                            provide a sensitizing experience, users are invited to move through a small scale physical
+                            model of the Stockholm metro and urban environment, made available by the use of a motion
+                            capture system, and experience its surrounding present and imagined future sounds. With the
+                            larger goal of improving the sonic interaction experience, particularly in regards to the
+                            future soundscape, the choice of sounds was continuously iterated and discussed with a focus
+                            on their added value and mapping of physical dimensions to auditory ones. Through preference
+                            estimation with one test participant, an urban planner and public transport enthusiast, the
+                            model did bring acoustic awareness as intended. However, with the present and future sound
+                            being rather similar, the future rendering could have benefitted from using sounds less
+                            conforming to the present soundscape.
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://www.kth.se/student/kurser/kurs/DT2300?l=en" target="_blank"
+                                class="btn btn-gray">Course</a>
+                            <a href="https://docs.google.com/document/d/17JV4kHSZukY-lshcCFjC2DK1nezu2FBkkXdmyQBRjRU/edit?usp=sharing"
+                                target="_blank" class="btn btn-light">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

@@ -222,6 +222,7 @@ a:hover {
 .btn-light{
     background-color: #FA4851 !important;
     border: none !important;
+    color:white !important;
 }
 .btn-light:hover{
     color:white !important;
