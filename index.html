@@ -1,317 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='uk-height-1-1' lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <title>fl | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Federico Landorno's online portfolio">
     <meta name="keywords" content="">
     <meta name="author" content="Federico Landorno">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>fl | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-    <!-- Navbar -->
-    <div class="container hide-mobile">
-        <div class="row" style="height: 10vh;">
-            <!-- Left col -->
-            <div class="col-lg-8 hide-mobile">
-                <a class="nav-link" href="#works">
-                    <p class="dot">●</p> Work
+<body class='uk-height-1-1'>
+    <div class='uk-height-1-1'>
+        <!-- NAVBAR -->
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li><a href="#work" uk-scroll>Work</a></li>
+                    <li><a href=" about.html">About</a></li>
+                </ul>
+            </div>
+
+            <!--div class="uk-navbar-center"><a class="uk-navbar-item uk-logo" href="">fl</a></div-->
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="" uk-icon="icon: pull"></a></li>
+                    <li><a href="mailto:f.landorno@gmail.com" uk-icon="icon: mail"></a></li>
+                    <li><a target="blank" href="https://www.facebook.com/landornofederico/"
+                            uk-icon="icon: facebook"></a>
+                    </li>
+                    <li><a target="blank" href="https://www.linkedin.com/in/landornofederico/"
+                            uk-icon="icon: linkedin"></a>
+                    </li>
+                    <li><a target="blank" href="https://www.behance.net/flandorno" uk-icon="icon: behance"></a></li>
+                    <li><a target="blank" href="https://github.com/FedericoLandorno" uk-icon="icon: github"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MOBILE NAV -->
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-margin uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-overlay">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
                 </a>
-                <a class="nav-link" data-toggle="modal" data-target="#aboutModal" href="#">
-                    <p class="dot">●</p> About
-                </a>
             </div>
-            <!-- Right col -->
-            <div class="col-lg-4 col-12">
-                <div class="col-red"></div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true; mode: slide">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="#">Home</a></li>
+                        <li><a href="#work" uk-scroll>Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="uk-nav-header">My Social</li>
+                        <li>
+                            <a target="blank" href="https://www.facebook.com/landornofederico/">
+                                <span class="uk-margin-small-right" uk-icon="icon: facebook"></span>
+                                Facebook</a>
+                            <a target="blank" href="https://www.linkedin.com/in/landornofederico/">
+                                <span class="uk-margin-small-right" uk-icon="icon: linkedin"></span>
+                                LinkedIn</a>
+                            <a target="blank" href="https://www.behance.net/flandorno">
+                                <span class="uk-margin-small-right" uk-icon="icon: behance"></span>
+                                Behance</a>
+                            <a target="blank" href="https://github.com/FedericoLandorno">
+                                <span class="uk-margin-small-right" uk-icon="icon: github"></span>
+                                Github</a>
+                        </li>
+                        <li class="uk-divider-icon"></li>
+                        <li><a href="mailto:f.landorno@gmail.com"><span class="uk-margin-small-right"
+                                    uk-icon="icon: mail"></span> Contact Me</a>
+                        </li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pull"></span> Resumee</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
+        </nav>
+
+        <!-- INTRODUCTION -->
+        <div class="uk-card uk-card-secondary uk-card-body uk-width-1-2@m"
+            uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+            <h1>Hi, I'm <span style="color: #ff4d21">Federico Landorno</span>! </br>
+                Interactive Media Technology </br>
+                Master Student @ KTH </br></h1>
+        </div>
+
+        <!-- CHECK OUT -->
+        <div class="uk-card uk-card-body uk-width-1-2@m" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300;">
+            <h1>Check out some of my </br>
+                <a class="uk-link-muted" href="#work" uk-scroll><span style="color: #ff4d21">UX/UI Design works</span></a>
+                below
+                </br>
+                or learn more <a class="uk-link-muted" href="about.html"><span style="color: #ff4d21">about
+                        me</span></a>
+            </h1>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #FA4851; color:white">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">About me!</h5>
-                </div>
-                <div class="modal-body">
-                    Hi! I'm Federico, a UX Designer and developer. At the moment I am pursuing a Master in Interactive
-                    Media Technology from the Royal Institute of Technology, Stockholm to deepen my knowledge of user
-                    experience and interaction.
-                    <br><br>
-                    I started my journey as a developer during high school where I learned the fundamentals of logic.
-                    Spurred by the challenges, I started working in this area as a Java developer until I decided to
-                    resume studying by enrolling at the University of Turin. In those three years I learned new
-                    approaches to programming and got a peripheral view on the vast subject.
-                    <br><br>
-                    I decided to move on to a branch that required more imagination and relationships with people, so I
-                    decided to have an experience abroad in Sweden where I now live and study!
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div id="stain">
-        <div class="container">
-            <div class="row" id="main-red-col">
-                <!-- Left col -->
-                <div class="col-lg-8 hide-mobile">
-                    <p id="intro">
-                        <img src="img/fox.gif" alt="Hi">
-                        , I'm Federico Landorno!</br>
-                        Interactive Media Technology</br>
-                        Master Student @ KTH
-                    </p>
-                </div>
-                <!-- Right col -->
-                <div class="col-lg-4 col-12">
-                    <div class="col-red-round">
-
-                        <img src="img/me.jpg" id="circle-me">
-
-                        <div id="circle-social">
-                            <a href="https://www.facebook.com/landornofederico/" target="_blank">
-                                <img src="img/facebook-logo-white.svg">
-                            </a>
-                            <a href="https://www.linkedin.com/in/landornofederico/" target="_blank">
-                                <img src="img/linkedin-icon-logo-svg-vector.svg">
-                            </a>
-                            <a href="https://www.behance.net/flandorno" target="_blank">
-                                <img src="img/behance-1-logo-svg-vector-orange-white.svg">
-                            </a>
-                            <a href="https://github.com/FedericoLandorno" target="_blank">
-                                <img src="img/github-icon-1-logo-svg-vector.svg">
-                            </a>
+    <div class='uk-height-1-1' id="work">
+        <!-- WORKS -->
+        <div class="uk-container">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-child-width-1-2@m" uk-grid>
+                    <!-- card -->
+                    <div uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-margin-medium-top">
+                            <div class="uk-card-badge uk-label" style="background-color: #ff0000;">Mockup</div>
+                            <div class="uk-card-media-top">
+                                <img src="img/placeholder-card.png" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.
+                                </p>
+                                <a href="" class="uk-icon-button" uk-icon="arrow-right"></a>
+                            </div>
                         </div>
-
-                        <p id="mail-social">
-                            <img src="img/email-white-24dp.svg">
-                            <a href="mailto:f.landorno@gmail.com">f.landorno@gmail.com</a>
-                        </p>
-
-
-                        <p id="intro-mobile">
-                            <img src="img/fox.gif" alt="Hi">
-                            , I'm Federico Landorno!</br>
-                            Interactive Media Technology</br>
-                            Master Student @ KTH
-                        </p>
-
-                        <p id="look-work-mobile">
-                            Have a look at my works
-                        </p>
+                    </div>
+                    <!-- card -->
+                    <div uk-scrollspy="cls: uk-animation-slide-right; delay: 300;">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-margin-medium-top">
+                            <div class="uk-card-badge uk-label" style="background-color: #ff0000;">Mockup</div>
+                            <div class="uk-card-media-top">
+                                <img src="img/placeholder-card.png" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.
+                                </p>
+                                <a href="" class="uk-icon-button" uk-icon="arrow-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+                        <div class="uk-card uk-card-small uk-card-default uk-card-hover">
+                            <div class="uk-card-badge uk-label" style="background-color: #ff0000;">Mockup</div>
+                            <div class="uk-card-media-top">
+                                <img src="img/placeholder-card.png" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.
+                                </p>
+                                <a href="" class="uk-icon-button" uk-icon="arrow-right"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- footer of slash page-->
-    <div class="container">
-        <div class="row" style="height: 10vh;">
-            <!-- Left col -->
-            <div class="col-lg-8 hide-mobile">
-                <p id="look-work">
-                    <img src="img/double_arrow-black-24dp.svg">
-                    Have a look at my works
-                    <img src="img/double_arrow-black-24dp.svg">
-                </p>
-            </div>
-            <!-- Right col -->
-            <div class="col-lg-4 col-12">
-                <!--div class="col-red"-->
-                <div>
-                    <p id="arrow-mobile">⌵</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- WORKS -->
-
-    <div class="container" id="works">
-        <div class="card-deck">
-
-            <div class="card">
-                <img src="img/university/ProjectEir.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Project Eir</h5>
-                    <p class="card-text">Visualization of world clinical trials to understand which ones are most
-                        studied and compare them.</p>
-                    <p class="card-text"><small class="text-muted">Developer: HTML, CSS, JS (jQuery & D3)<br>Course:
-                            Information Visualization</small></p>
-
-                    <a href="#" data-toggle="modal" data-target="#clinical-modal" target="_blank"
-                        class="btn btn-light">About</a>
-                </div>
-            </div>
-
-            <div class="modal fade" id="clinical-modal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #FA4851; color:white">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Project Eir</h5>
-                        </div>
-                        <div class="modal-header">
-                            <small>
-                                Information Visualization includes techniques and principles for visualization of
-                                information with examples, demonstrations and lab assignments within different
-                                applications.
-                            </small>
-                        </div>
-                        <div class="modal-body">
-                            Managing and showing more than 300,000 clinical trials for researchers is a real
-                            problem.<br>
-                            This project aims to facilitate this problem by displaying information to make it easy to
-                            find details, give a good overview, explore clinical tests, and also filter, brush, and
-                            search for data.<br>
-                            The outcome of the course gave me the opportunity to improve different skills. We learned to
-                            retrieve data from in different ways and blend them together, We increased our knowledge in
-                            the use of D3.js, and more importantly apply information visualization theory along with
-                            data categorization.
-                        </div>
-                        <div class="modal-footer">
-                            <a href="https://www.kth.se/student/kurser/kurs/DH2321?l=en" target="_blank"
-                                class="btn btn-gray">Course</a>
-                            <a href="https://projecteir.github.io/" target="_blank" class="btn btn-light">Website</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="img/university/MemoryAr.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Memory AR</h5>
-                    <p class="card-text">The Memory card game brought in AR where the user will
-                        have to remember sounds and vibrations instead of images.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Developer: Unity, C#, Augmented Reality<br>Course:
-                            Multimodal Interaction</small></p>
-                    <a href="#" data-toggle="modal" data-target="#memory-modal" class="btn btn-light">About</a>
-                </div>
-            </div>
-
-            <div class="modal fade" id="memory-modal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #FA4851; color:white">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Memory AR</h5>
-                        </div>
-                        <div class="modal-header">
-                            <small>
-                                Multimodal interaction and interfaces is focused on the interaction
-                                between humans and computers, using interfaces that employ several modalities and human
-                                senses, such as speech, gestures and touch.
-                            </small>
-                        </div>
-                        <div class="modal-body">
-                            The purpose of the Memory AR project was to compare two different modalities, which are
-                            not commonly found in a typical Memory game. For once we wanted to enable visually
-                            impaired people to play a game of memory. In addition to that we wanted to compare the
-                            capability to perceive and remember different modalities. In this paper we show how users
-                            experience the new Memory AR, which play sound or vibration patterns instead of showing
-                            images.
-                            Furthermore, how good the participants are at perceiving the sound and vibration
-                            patterns. We also aim to investigate if a redundant implementation of sound and vibration
-                            improved the recognition and remembering rate and perhaps made the game more engaging.
-                        </div>
-                        <div class="modal-footer">
-                            <a href="https://www.kth.se/student/kurser/kurs/DT2140?l=en" target="_blank"
-                                class="btn btn-gray">Course</a>
-                            <a href="https://drive.google.com/file/d/1iYuY8Ta4liZtT4NC8pKwOmLj7xGr7v48/view?usp=sharing"
-                                target="_blank" class="btn btn-light">Report</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <img src="img/university/Sonification.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Soundscape of urban transport</h5>
-                    <p class="card-text">Design of the soundscape of the future for the metro and the streets of
-                        Stockholm.</p>
-                    <p class="card-text"><small class="text-muted">Interaction and Sound Designer<br>
-                            Course: Sound in Interaction
-                        </small></p>
-                    <p class="card-text"><small class="text-muted"></small></p>
-                    <a href="#" data-toggle="modal" data-target="#sound-modal" target="_blank"
-                        class="btn btn-light">About</a>
-                </div>
-            </div>
-
-
-            <div class="modal fade" id="sound-modal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header" style="background-color: #FA4851; color:white">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Soundscape of urban transport</h5>
-                        </div>
-                        <div class="modal-header">
-                            <small>
-                                Sound in Interaction offers a multi-disciplinary overview of the principles underlying the use of
-                                sound in interaction between users and machines.
-                            </small>
-                        </div>
-                        <div class="modal-body">
-                            The soundscapes of environments of urban transportation means are oftentimes overlooked by
-                            frequent visitors. This paper aims to bring a broadened acoustic awareness to one such
-                            environment, namely the Stockholm metro and adjacent urban soundscape. While aiming to
-                            provide a sensitizing experience, users are invited to move through a small scale physical
-                            model of the Stockholm metro and urban environment, made available by the use of a motion
-                            capture system, and experience its surrounding present and imagined future sounds. With the
-                            larger goal of improving the sonic interaction experience, particularly in regards to the
-                            future soundscape, the choice of sounds was continuously iterated and discussed with a focus
-                            on their added value and mapping of physical dimensions to auditory ones. Through preference
-                            estimation with one test participant, an urban planner and public transport enthusiast, the
-                            model did bring acoustic awareness as intended. However, with the present and future sound
-                            being rather similar, the future rendering could have benefitted from using sounds less
-                            conforming to the present soundscape.
-                        </div>
-                        <div class="modal-footer">
-                            <a href="https://www.kth.se/student/kurser/kurs/DT2300?l=en" target="_blank"
-                                class="btn btn-gray">Course</a>
-                            <a href="https://docs.google.com/document/d/17JV4kHSZukY-lshcCFjC2DK1nezu2FBkkXdmyQBRjRU/edit?usp=sharing"
-                                target="_blank" class="btn btn-light">Report</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Javascript imported scripts -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
