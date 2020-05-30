@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class='uk-height-1-1' lang="en">
+
+<head>
+    <title>fl | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Federico Landorno's online portfolio">
+    <meta name="keywords" content="">
+    <meta name="author" content="Federico Landorno">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class='uk-height-1-1'>
+    <div>
+        <!-- NAVBAR -->
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li class="uk-active"><a href=" about.html">About</a></li>
+                </ul>
+            </div>
+
+            <!--div class="uk-navbar-center"><a class="uk-navbar-item uk-logo" href="">fl</a></div-->
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="" uk-icon="icon: pull"></a></li>
+                    <li><a href="mailto:f.landorno@gmail.com" uk-icon="icon: mail"></a></li>
+                    <li><a target="blank" href="https://www.facebook.com/landornofederico/"
+                            uk-icon="icon: facebook"></a>
+                    </li>
+                    <li><a target="blank" href="https://www.linkedin.com/in/landornofederico/"
+                            uk-icon="icon: linkedin"></a>
+                    </li>
+                    <li><a target="blank" href="https://www.behance.net/flandorno" uk-icon="icon: behance"></a></li>
+                    <li><a target="blank" href="https://github.com/FedericoLandorno" uk-icon="icon: github"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MOBILE NAV -->
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-overlay">
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+            </div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true; mode: slide">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="uk-active"><a href="about.html">About</a></li>
+                        <li class="uk-nav-header">My Social</li>
+                        <li>
+                            <a target="blank" href="https://www.facebook.com/landornofederico/">
+                                <span class="uk-margin-small-right" uk-icon="icon: facebook"></span>
+                                Facebook</a>
+                            <a target="blank" href="https://www.linkedin.com/in/landornofederico/">
+                                <span class="uk-margin-small-right" uk-icon="icon: linkedin"></span>
+                                LinkedIn</a>
+                            <a target="blank" href="https://www.behance.net/flandorno">
+                                <span class="uk-margin-small-right" uk-icon="icon: behance"></span>
+                                Behance</a>
+                            <a target="blank" href="https://github.com/FedericoLandorno">
+                                <span class="uk-margin-small-right" uk-icon="icon: github"></span>
+                                Github</a>
+                        </li>
+                        <li class="uk-divider-icon"></li>
+                        <li><a href="mailto:f.landorno@gmail.com"><span class="uk-margin-small-right"
+                                    uk-icon="icon: mail"></span> Contact Me</a>
+                        </li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pull"></span> Resumee</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- INTRODUCTION -->
+        <div class="uk-card uk-card-secondary uk-card-body uk-width-1-2@m"
+            uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
+            <h4>Hi! I'm Federico, a <span style="color: #ff0000">UX Designer</span> and <span style="color: #ff4d21">developer</span>. At the moment I am pursuing a Master in Interactive
+                Media Technology from the Royal Institute of Technology, Stockholm to deepen my knowledge of user
+                experience and interaction.
+                <br><br>
+                I started my journey as a developer during high school where I learned the fundamentals of logic.
+                Spurred by the challenges, I started working in this area as a Java developer until I decided to
+                resume studying by enrolling at the University of Turin. In those three years I learned new
+                approaches to programming and got a peripheral view on the vast subject.
+                <br><br>
+                I decided to move on to a branch that requires more imagination and relationships with people, so I
+                decided to have an experience abroad in Sweden where I now live and study!</h4>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="uk-section bg-dark-orange uk-padding">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <p>
+                        <a class="uk-link-reset" href="" uk-icon="icon: pull">Download My Resumee </a>  </br>
+                        <a class="uk-link-reset" href="mailto:f.landorno@gmail.com" uk-icon="icon: mail">Contact Me </a>
+                    </p>
+                </div>
+                <div>
+                    <p>Made by Federico Landorno with ♥ </br> © 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
