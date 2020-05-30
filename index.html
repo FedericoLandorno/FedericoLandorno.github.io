@@ -17,7 +17,7 @@
 </head>
 
 <body class='uk-height-1-1'>
-    <div class='uk-height-1-1'>
+    <div uk-height-viewport="expand: true">
         <!-- NAVBAR -->
         <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
 
@@ -48,7 +48,7 @@
         </nav>
 
         <!-- MOBILE NAV -->
-        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-margin uk-hidden@m">
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-hidden@m">
             <div class="uk-navbar-left">
                 <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-overlay">
                     <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
@@ -59,8 +59,7 @@
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
 
                     <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                        <li class="uk-active"><a href="#">Home</a></li>
-                        <li><a href="#work" uk-scroll>Work</a></li>
+                        <li class="uk-active"><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li class="uk-nav-header">My Social</li>
                         <li>
@@ -90,7 +89,7 @@
         </nav>
 
         <!-- INTRODUCTION -->
-        <div class="uk-card uk-card-secondary uk-card-body uk-width-1-2@m"
+        <div id="intro" class="uk-card uk-card-secondary uk-card-body uk-width-1-2@m"
             uk-scrollspy="cls: uk-animation-slide-left; delay: 300;">
             <h1>Hi, I'm <span style="color: #ff4d21">Federico Landorno</span>! </br>
                 Interactive Media Technology </br>
@@ -109,7 +108,7 @@
         </div>
     </div>
 
-    <div class='uk-height-1-1' id="work">
+    <div id="work">
         <!-- WORKS -->
         <div class="uk-container">
             <div class="uk-flex uk-flex-center">
