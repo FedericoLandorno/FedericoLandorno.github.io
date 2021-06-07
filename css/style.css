@@ -25,3 +25,8 @@
     background-color: #ff0000;
     color: #ffffff;
 }
+
+.uk-button-primary:hover{
+    filter: brightness(90%);
+    transition: 0.3s;
+}
